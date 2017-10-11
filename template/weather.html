@@ -1,0 +1,13 @@
+<!--<h2 id="top-bar">Last 5 days seaLevel Status </h2>-->
+<div>
+    <div class=col-lg-12 col-xs-7>
+    <table class="table table-responsive">
+        <tr>        <th>Date</th>
+            <th>Sea Level</th>
+        </tr>
+        <tr ng-repeat="x in seaLevel.list|timeWiseFilter">
+            <td>{{x.dt_txt}}</td>
+            <td>{{x.main.sea_level+'hPa'}}</td>
+        </tr>
+        <h4 style="font-family: Aparajita">** Records are published based on Last 5 days Weather forecast.</h4>
+</div>
